@@ -1,0 +1,9 @@
+('display_oled_face_image', 'resources/cozmo_faces/face8.png', 1)
+('say_text', 'Yayy!!', 1, 1)
+('drive_straight', 30, 200)
+('set_lift_height', 1, 0.2)
+('drive_straight', -30, 200)
+('set_lift_height', 0, 0.2)
+('drive_straight', 30, 0.2)
+('set_lift_height', 1, 0.2)
+

@@ -1,0 +1,12 @@
+('drive_straight', 60, 40)
+
+('set_head_angle', -30, 1)
+
+('say_text', 'ah', 1, 0)
+('display_oled_face_image', 'resources/cozmo_faces/face1.png', 1)
+
+('say_text', 'uh huh', 1, 1)
+('drive_straight', 30, 60)
+
+('display_oled_face_image', 'resources/cozmo_faces/face7.png', 1)
+

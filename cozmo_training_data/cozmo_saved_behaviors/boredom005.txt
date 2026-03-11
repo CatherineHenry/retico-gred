@@ -1,0 +1,8 @@
+('turn_in_place', 60, 30)
+('display_oled_face_image', 'resources/cozmo_faces/face10.png', 1)
+('turn_in_place', -120, 50)
+('display_oled_face_image', 'resources/cozmo_faces/face10.png', 1)
+('say_text', 'ugh', 1, 0)
+('turn_in_place', 60, 30)
+('say_text', 'aawwhn', 1, 0)
+

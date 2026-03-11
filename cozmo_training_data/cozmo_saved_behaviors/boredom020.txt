@@ -1,0 +1,7 @@
+('drive_straight', 60, 20)
+
+('set_head_angle', -30, 1)
+
+('display_oled_face_image', 'resources/cozmo_faces/face9.png', 1)
+('say_text', 'tsoo', 1, 0)
+

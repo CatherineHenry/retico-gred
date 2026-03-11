@@ -1,0 +1,8 @@
+('display_oled_face_image', 'resources/cozmo_faces/face6.png', 1)
+('say_text', 'Boohoo!', 1, 1)
+('set_head_angle', -30, 1)
+('say_text', 'Boohoo!', 1, 0)
+('drive_straight', 60, 40)
+('display_oled_face_image', 'resources/cozmo_faces/face6.png', 1)
+('say_text', 'BooOooHoooOOOoo....', 2, 0)
+

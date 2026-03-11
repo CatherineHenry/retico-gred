@@ -1,0 +1,12 @@
+('set_head_angle', 45, 1)
+('set_lift_height', 1, 0.2)
+('drive_straight', 50, 500)
+('display_oled_face_image', 'resources/cozmo_faces/face8.png', 1)
+('say_text', 'Hip!', 1, 1)
+('set_lift_height', 0.75, 0.2)
+('set_lift_height', 1, 0.2)
+('say_text', 'Hip!', 1, 1)
+('drive_straight', 100, 500)
+('display_oled_face_image', 'resources/cozmo_faces/face8.png', 1)
+('say_text', 'Hooray!', 1, 1)
+

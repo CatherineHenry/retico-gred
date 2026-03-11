@@ -1,0 +1,12 @@
+('display_oled_face_image', 'resources/cozmo_faces/face8.png', 1)
+('say_text', 'Uh huh!', 1, 1)
+('turn_in_place', 60, 500)
+('drive_straight', -80, 300)
+('set_lift_height', 0.5, 0.2)
+('drive_straight', -80, 300)
+('display_oled_face_image', 'resources/cozmo_faces/face8.png', 1)
+('drive_straight', 80, 300)
+('drive_straight', 80, 300)
+('turn_in_place', -60, 500)
+('set_lift_height', 0, 0.2)
+

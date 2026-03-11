@@ -1,0 +1,6 @@
+('say_text', 'Hoo!', 1, 1)
+('display_oled_face_image', 'resources/cozmo_faces/face7.png', 1)
+('display_oled_face_image', 'resources/cozmo_faces/face8.png', 1)
+('set_head_angle', 45, 1)
+('drive_straight', 30, 200)
+

@@ -1,0 +1,9 @@
+('set_head_angle', 30, 1)
+('set_lift_height', 0.5, 1)
+('drive_straight', 100, 500)
+('display_oled_face_image', 'resources/cozmo_faces/face8.png', 0.5)
+('drive_straight', 100, 500)
+('set_head_angle', 45, 0.2)
+('display_oled_face_image', 'resources/cozmo_faces/face12.png', 1)
+('say_text', 'goo!', 1, 1)
+

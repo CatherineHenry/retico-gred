@@ -1,0 +1,7 @@
+('display_oled_face_image', 'resources/cozmo_faces/face9.png', 1)
+('say_text', 'MaaAAAAA', 1, 0)
+('set_head_angle', 45, 1)
+('set_lift_height', 0.75, 0.2)
+('display_oled_face_image', 'resources/cozmo_faces/face6.png', 1)
+('say_text', 'MaaaAAAAAAaaaa', 1, 1)
+

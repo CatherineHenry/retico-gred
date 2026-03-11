@@ -1,0 +1,7 @@
+('drive_straight', 150, 500)
+('display_oled_face_image', 'resources/cozmo_faces/face7.png', 1)
+('display_oled_face_image', 'resources/cozmo_faces/face6.png', 0.2)
+('say_text', 'woo!', 1, 1)
+('display_oled_face_image', 'resources/cozmo_faces/face4.png', 1)
+('display_oled_face_image', 'resources/cozmo_faces/face8.png', 1)
+

@@ -1,0 +1,6 @@
+('display_oled_face_image', 'resources/cozmo_faces/face5.png', 1)
+('say_text', 'aawwhn', 1, 0)
+('drive_straight', 90, 30)
+('display_oled_face_image', 'resources/cozmo_faces/face10.png', 1)
+('say_text', 'aawwhn', 1, 1)
+

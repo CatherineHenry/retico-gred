@@ -1,0 +1,16 @@
+('set_head_angle', -30, 1)
+
+('drive_straight', 30, 30)
+
+('set_head_angle', 0, 1)
+
+('display_oled_face_image', 'resources/cozmo_faces/face1.png', 1)
+
+('drive_straight', 30, 30)
+
+('set_head_angle', 30, 1)
+
+('display_oled_face_image', 'resources/cozmo_faces/face5.png', 1)
+('say_text', 'aawwhn', 1, 0)
+('set_head_angle', 0, 1)
+

@@ -1,0 +1,12 @@
+('set_lift_height', 1, 0.2)
+('turn_in_place', 30, 500)
+('drive_straight', 100, 500)
+('display_oled_face_image', 'resources/cozmo_faces/face8.png', 1)
+('say_text', 'whee!', 1, 1)
+('turn_in_place', -60, 500)
+('drive_straight', 100, 500)
+('display_oled_face_image', 'resources/cozmo_faces/face8.png', 1)
+('say_text', 'whee!', 1, 1)
+('set_lift_height', 0, 0.2)
+('display_oled_face_image', 'resources/cozmo_faces/face8.png', 1)
+

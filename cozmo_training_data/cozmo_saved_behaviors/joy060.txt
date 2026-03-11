@@ -1,0 +1,6 @@
+('display_oled_face_image', 'resources/cozmo_faces/face8.png', 1)
+('turn_in_place', 360, 500)
+('say_text', 'whee! whee!', 1, 1)
+('turn_in_place', -360, 500)
+('display_oled_face_image', 'resources/cozmo_faces/face8.png', 1)
+

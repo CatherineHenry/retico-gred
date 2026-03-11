@@ -1,0 +1,11 @@
+('turn_in_place', 60, 100)
+('set_head_angle', 30, 1)
+('set_lift_height', 1, 0.2)
+('display_oled_face_image', 'resources/cozmo_faces/face7.png', 1)
+('say_text', 'eh?', 1, 1)
+('set_head_angle', 0, 0.2)
+('set_lift_height', 0, 0.2)
+('turn_in_place', -60, 500)
+('display_oled_face_image', 'resources/cozmo_faces/face7.png', 1)
+('say_text', 'ack!', 1, 1)
+

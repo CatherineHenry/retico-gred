@@ -1,0 +1,6 @@
+('say_text', 'eh?', 1, 1)
+('display_oled_face_image', 'resources/cozmo_faces/face7.png', 1)
+('drive_straight', 100, 100)
+('display_oled_face_image', 'resources/cozmo_faces/face7.png', 1)
+('say_text', 'huh?', 1, 1)
+

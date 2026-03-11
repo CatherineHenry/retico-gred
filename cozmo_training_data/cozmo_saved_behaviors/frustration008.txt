@@ -1,0 +1,9 @@
+('set_head_angle', 45, 1)
+('display_oled_face_image', 'resources/cozmo_faces/face2.png', 1)
+('say_text', 'Ughhhh', 1, 0)
+('set_lift_height', 1, 0.2)
+('turn_in_place', 30, 250)
+('turn_in_place', -60, 250)
+('turn_in_place', 30, 250)
+('turn_in_place', -60, 250)
+

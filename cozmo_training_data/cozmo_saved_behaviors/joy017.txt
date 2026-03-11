@@ -1,0 +1,7 @@
+('set_head_angle', 45, 0.2)
+('set_lift_height', 1, 0.2)
+('drive_straight', 100, 500)
+('display_oled_face_image', 'resources/cozmo_faces/face8.png', 1)
+('say_text', 'eeeee!!!', 1, 1)
+('turn_in_place', 360, 500)
+

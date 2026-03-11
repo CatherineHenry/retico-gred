@@ -1,0 +1,13 @@
+('turn_in_place', -30, 100)
+('display_oled_face_image', 'resources/cozmo_faces/face4.png', 1)
+('set_head_angle', -30, 1)
+
+('set_lift_height', 0.5, 1)
+
+('display_oled_face_image', 'resources/cozmo_faces/face8.png', 0.2)
+('set_head_angle', 0, 1)
+
+('set_lift_height', 0, 1)
+
+('display_oled_face_image', 'resources/cozmo_faces/face8.png', 1)
+

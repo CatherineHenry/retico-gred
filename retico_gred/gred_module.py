@@ -1,4 +1,7 @@
+import glob
+import itertools
 import os
+import re
 import sys
 import time
 from typing import Union
@@ -121,8 +124,42 @@ class GREDActionGenerator(abstract.AbstractModule):
             generated_texts = tokenizer.batch_decode(output, skip_special_tokens=True)
             return [generated_text.split("Behaviors:")[1].strip() for generated_text in generated_texts]
 
+
+    def change_words(self, predicted_strings, behaviour):
+        """
+        Some of the predicted words are not compatible with Cozmo.
+        - "mm" is spoken as "millimeter"
+        - "blarghhhh" becomes "b" "l" "a" "r" "g" "h" "h" "h" "h"
+        - "zoo" and "yawn" sound too much like actual words instead of spoken words
+
+        This replaces all "say_text_" strings with strings from the training data (modified to adjust "yawn" and "zoo" into "aawwhn" and "tsoo")
+        which guarantees Cozmo won't accidentally say a word that sounds more intelligent than we are expecting.
+        """
+        possible_new_words = []
+        training_data_directory_path = "../../retico-gred/cozmo_training_data/cozmo_saved_behaviors"
+        if behaviour == 'interest_desire':
+            # Create the search pattern
+            file_name_substrings = ['understanding', 'joy', 'interest']
+        elif behaviour == 'confusion_sorrow_boredom':
+            file_name_substrings = ['boredom', 'confusion', 'frustration']
+
+        search_patterns = [os.path.join(training_data_directory_path, f"*{substring}*") for substring in file_name_substrings]
+
+        matching_files = [glob.glob(search_pattern) for search_pattern in search_patterns]
+        matching_files = list(itertools.chain.from_iterable(matching_files))
+        for filepath in matching_files:
+            if os.path.isfile(filepath): # Ensure it's a file and not a directory
+                with open(filepath, 'r') as f:
+                    say_text_command = [re.sub("[\s+'()]", '', "_".join(sub_list.split(","))) for sub_list in f.read().split('\n') if 'say_text' in sub_list]
+                    possible_new_words.extend(say_text_command)
+        regex = re.compile(r'(say_text_([^ ]+)_([^ ]+)_([^ ]+))')
+        updated_predicted_strings = [regex.sub(lambda match: random.choice(possible_new_words), predicted_string) for predicted_string in predicted_strings]
+        return updated_predicted_strings
+
+
     def setup(self):
         if self.behaviours_to_pregenerate:
             for behavior, num_to_generate in self.behaviours_to_pregenerate:
                 results = self.predict(behavior, num_to_generate)
-                self.pregenerated_behaviours[behavior] = results
+                updated_predicted_strings = self.change_words(results, behavior)
+                self.pregenerated_behaviours[behavior] = updated_predicted_strings

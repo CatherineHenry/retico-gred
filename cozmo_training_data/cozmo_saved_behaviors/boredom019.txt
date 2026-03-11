@@ -1,0 +1,7 @@
+('set_head_angle', -20, 0.5)
+('display_oled_face_image', 'resources/cozmo_faces/face5.png', 1)
+('set_head_angle', 0, 0.5)
+('display_oled_face_image', 'resources/cozmo_faces/face1.png', 1)
+('display_oled_face_image', 'resources/cozmo_faces/face9.png', 1)
+('say_text', 'tsoo', 1, 0)
+

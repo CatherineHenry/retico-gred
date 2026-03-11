@@ -1,0 +1,8 @@
+('set_head_angle', 45, 1)
+('set_lift_height', 1, 0.2)
+('set_lift_height', 0, 0.2)
+('display_oled_face_image', 'resources/cozmo_faces/face8.png', 1)
+('say_text', 'Hmm', 1, 0)
+('set_head_angle', 0, 0.2)
+('say_text', 'Ok!', 1, 1)
+

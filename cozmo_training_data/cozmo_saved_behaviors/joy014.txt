@@ -1,0 +1,10 @@
+('display_oled_face_image', 'resources/cozmo_faces/face11.png', 1)
+('say_text', 'Yahoo!!!', 1, 1)
+('set_lift_height', 1, 0.2)
+('turn_in_place', 360, 500)
+('set_lift_height', 0, 0.2)
+('set_lift_height', 1, 0.2)
+('set_lift_height', 0, 0.2)
+('set_lift_height', 1, 0.2)
+('set_lift_height', 0, 0.2)
+

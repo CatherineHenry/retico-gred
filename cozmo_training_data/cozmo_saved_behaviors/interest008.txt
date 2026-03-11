@@ -1,0 +1,6 @@
+('say_text', 'Hoo', 1, 1)
+('display_oled_face_image', 'resources/cozmo_faces/face4.png', 1)
+('set_lift_height', 1, 1.5)
+('display_oled_face_image', 'resources/cozmo_faces/face7.png', 1)
+('say_text', 'Ah', 1, 1)
+

@@ -1,0 +1,8 @@
+('turn_in_place', 90, 200)
+('set_head_angle', 20, 1)
+('turn_in_place', -180, 200)
+('set_head_angle', 0, 1)
+('turn_in_place', 90, 200)
+('display_oled_face_image', 'resources/cozmo_faces/face4.png', 1)
+('say_text', 'Huhh?', 1, 1)
+

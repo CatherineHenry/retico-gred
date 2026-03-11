@@ -1,0 +1,9 @@
+('set_head_angle', -10, 0.2)
+('display_oled_face_image', 'resources/cozmo_faces/face6.png', 1)
+('say_text', 'wah!', 1, 1)
+('set_head_angle', -30, 0.2)
+('set_lift_height', 0.4, 0.2)
+('display_oled_face_image', 'resources/cozmo_faces/face6.png', 1)
+('say_text', 'oh', 0.2, 0)
+('say_text', 'waAAaaa!', 1, 1)
+

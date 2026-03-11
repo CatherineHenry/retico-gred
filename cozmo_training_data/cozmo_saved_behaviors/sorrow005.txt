@@ -1,0 +1,8 @@
+('display_oled_face_image', 'resources/cozmo_faces/face6.png', 1)
+('say_text', 'Boohoohoo', 1, 0)
+('set_head_angle', -30, 1)
+('set_lift_height', 0.75, 1)
+('turn_in_place', 30, 200)
+('say_text', 'Hoo hoo', 1, 1)
+('turn_in_place', -30, 200)
+

@@ -1,0 +1,7 @@
+('say_text', 'hum', 1, 0)
+('set_head_angle', -30, 0.2)
+('display_oled_face_image', 'resources/cozmo_faces/face9.png', 2)
+('set_head_angle', 0, 0.2)
+('display_oled_face_image', 'resources/cozmo_faces/face7.png', 1)
+('say_text', 'huh?', 1, 1)
+

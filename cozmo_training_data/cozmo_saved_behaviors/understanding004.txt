@@ -1,0 +1,8 @@
+('say_text', 'Huh', 1, 1)
+('drive_straight', 60, 200)
+('say_text', 'huh', 1, 0)
+('drive_straight', 60, 200)
+('say_text', 'OK', 1, 1)
+('display_oled_face_image', 'resources/cozmo_faces/face1.png', 1)
+('set_head_angle', 45, 0.5)
+

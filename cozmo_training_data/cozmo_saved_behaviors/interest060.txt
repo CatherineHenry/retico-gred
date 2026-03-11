@@ -1,0 +1,8 @@
+('display_oled_face_image', 'resources/cozmo_faces/face7.png', 0.5)
+('set_head_angle', 30, 0.2)
+('set_lift_height', 1, 0.2)
+('set_lift_height', 0, 0.2)
+('display_oled_face_image', 'resources/cozmo_faces/face12.png', 0.5)
+('say_text', 'aha!', 1, 1)
+('display_oled_face_image', 'resources/cozmo_faces/face12.png', 1)
+

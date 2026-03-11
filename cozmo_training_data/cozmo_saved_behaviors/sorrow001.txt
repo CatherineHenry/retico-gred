@@ -1,0 +1,10 @@
+('say_text', 'WaaaAAAAaaaaAAA', 1, 1)
+('display_oled_face_image', 'resources/cozmo_faces/face9.png', 1)
+('display_oled_face_image', 'resources/cozmo_faces/face6.png', 1)
+('set_lift_height', 0.75, 0.5)
+('turn_in_place', 30, 200)
+('turn_in_place', -30, 200)
+('turn_in_place', 30, 200)
+('display_oled_face_image', 'resources/cozmo_faces/face6.png', 1)
+('say_text', 'WAAAaaaa', 1, 0)
+

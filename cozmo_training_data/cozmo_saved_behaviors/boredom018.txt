@@ -1,0 +1,8 @@
+('set_head_angle', 45, 2)
+
+('display_oled_face_image', 'resources/cozmo_faces/face10.png', 1)
+
+('say_text', 'aawwhn', 1, 0)
+('set_head_angle', -30, 1)
+('display_oled_face_image', 'resources/cozmo_faces/face9.png', 1)
+

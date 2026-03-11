@@ -1,0 +1,9 @@
+('turn_in_place', 60, 500)
+('display_oled_face_image', 'resources/cozmo_faces/face7.png', 1)
+('say_text', 'huh', 1, 0)
+('turn_in_place', -120, 500)
+('say_text', 'hmm', 1, 0)
+('display_oled_face_image', 'resources/cozmo_faces/face4.png', 1)
+('turn_in_place', 60, 500)
+('display_oled_face_image', 'resources/cozmo_faces/face4.png', 1)
+
