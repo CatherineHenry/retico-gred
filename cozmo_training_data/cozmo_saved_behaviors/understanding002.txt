@@ -1,7 +1,7 @@
 ('turn_in_place', 60, 300)
 ('turn_in_place', -60, 300)
 ('display_oled_face_image', 'resources/cozmo_faces/face8.png', 1)
-('say_text', 'OK!', 1, 1)
+('say_text', 'hah!', 1, 1)
 ('set_lift_height', 1, 0.2)
 ('set_lift_height', 0, 0.2)
 

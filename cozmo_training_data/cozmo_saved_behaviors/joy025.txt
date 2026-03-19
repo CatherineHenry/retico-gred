@@ -4,6 +4,6 @@
 ('set_lift_height', 0, 0.2)
 ('set_lift_height', 1, 0.2)
 ('display_oled_face_image', 'resources/cozmo_faces/face8.png', 1)
-('say_text', 'yahoo!', 1, 1)
+('say_text', 'haha woo!', 1, 1)
 ('set_lift_height', 0, 0.2)
 

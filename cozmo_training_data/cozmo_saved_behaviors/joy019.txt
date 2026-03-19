@@ -1,5 +1,5 @@
 ('display_oled_face_image', 'resources/cozmo_faces/face8.png', 1)
-('say_text', 'Wahoo!', 1, 1)
+('say_text', 'oohoh!', 1, 1)
 ('drive_straight', 100, 500)
 ('set_lift_height', 0.5, 0.2)
 ('display_oled_face_image', 'resources/cozmo_faces/face8.png', 1)

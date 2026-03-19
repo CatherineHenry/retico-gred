@@ -1,5 +1,5 @@
 ('display_oled_face_image', 'resources/cozmo_faces/face8.png', 1)
-('say_text', 'ok! ok!', 1, 1)
+('say_text', 'hah! hah!', 1, 1)
 ('set_head_angle', -30, 0.2)
 ('display_oled_face_image', 'resources/cozmo_faces/face8.png', 1)
 ('set_head_angle', 0, 0.2)

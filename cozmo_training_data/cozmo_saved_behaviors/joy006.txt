@@ -1,6 +1,6 @@
 ('set_lift_height', 0.3, 0.2)
 ('display_oled_face_image', 'resources/cozmo_faces/face7.png', 1)
-('say_text', 'Wahoo!', 1, 1)
+('say_text', 'oohoh!', 1, 1)
 ('set_lift_height', 0, 0.2)
 ('set_lift_height', 0.3, 0.2)
 ('set_lift_height', 0, 0.2)

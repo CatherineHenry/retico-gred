@@ -1,4 +1,4 @@
-('say_text', 'Yahoo!', 1, 1)
+('say_text', 'haha woo!', 1, 1)
 ('display_oled_face_image', 'resources/cozmo_faces/face7.png', 1)
 ('set_lift_height', 0.5, 0.2)
 ('drive_straight', 40, 200)

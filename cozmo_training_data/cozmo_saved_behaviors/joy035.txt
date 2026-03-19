@@ -6,5 +6,5 @@
 ('display_oled_face_image', 'resources/cozmo_faces/face8.png', 1)
 ('say_text', 'woo!', 1, 1)
 ('turn_in_place', 360, 500)
-('say_text', 'yahoo!', 1, 1)
+('say_text', 'haha woo!', 1, 1)
 

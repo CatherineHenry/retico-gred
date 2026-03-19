@@ -5,5 +5,5 @@
 ('drive_straight', 20, 250)
 ('drive_straight', 20, 250)
 ('display_oled_face_image', 'resources/cozmo_faces/face8.png', 1)
-('say_text', 'Yipppeeee!', 1, 1)
+('say_text', 'eeaa!', 1, 1)
 

@@ -2,7 +2,7 @@
 ('set_head_angle', 45, 0.2)
 ('set_lift_height', 1, 0.2)
 ('display_oled_face_image', 'resources/cozmo_faces/face6.png', 1)
-('say_text', 'No!', 1, 1)
+('say_text', 'gaugh!', 1, 1)
 ('drive_straight', 100, 500)
 ('say_text', 'waaAAAaaa!', 1, 1)
 ('drive_straight', 100, 500)
