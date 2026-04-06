@@ -8,6 +8,8 @@ from typing import Union
 
 import random
 
+from opentelemetry import trace
+
 from retico_vision import ObjectPermanenceIU
 
 os.environ['CORE'] = 'retico-core'
@@ -19,10 +21,13 @@ import retico_core
 from retico_core import abstract, UpdateType
 # from retico_chatgpt.chatgpt import GPTTextIU
 from retico_core.text import TextIU
+tracer = trace.get_tracer("my.tracer.name")
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model_name = "bsu-slim/gred-cozmo"
 model = AutoModelForCausalLM.from_pretrained(model_name).to(device).eval()
+# model = AutoModelForCausalLM.from_pretrained(model_name, local_files_only=True).to(device).eval()
+# tokenizer = AutoTokenizer.from_pretrained(model_name, local_files_only=True, use_fast=False)
 tokenizer = AutoTokenizer.from_pretrained(model_name, use_fast=False)
 
 class GREDTextIU(TextIU):
@@ -58,7 +63,7 @@ class GREDActionGenerator(abstract.AbstractModule):
         self.behaviours_to_pregenerate = behaviours_to_pregenerate
         self.pregenerated_behaviours = {}
 
-
+    @tracer.start_as_current_span("gred_process_update")
     def process_update(self, update_message):
         received_update = False
         for iu, update_type in update_message:
@@ -136,7 +141,7 @@ class GREDActionGenerator(abstract.AbstractModule):
         which guarantees Cozmo won't accidentally say a word that sounds more intelligent than we are expecting.
         """
         possible_new_words = []
-        training_data_directory_path = "../../retico-gred/cozmo_training_data/cozmo_saved_behaviors"
+        training_data_directory_path = "../../../retico-gred/cozmo_training_data/cozmo_saved_behaviors"
         if behaviour == 'interest_desire':
             # Create the search pattern
             file_name_substrings = ['understanding', 'joy', 'interest']
