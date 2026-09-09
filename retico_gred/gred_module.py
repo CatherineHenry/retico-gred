@@ -1,6 +1,7 @@
 import glob
 import itertools
 import os
+import pickle
 import re
 import sys
 import time
@@ -20,7 +21,8 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 import retico_core
 from retico_core import abstract, UpdateType
 # from retico_chatgpt.chatgpt import GPTTextIU
-from retico_core.text import TextIU
+from retico_core.text import TextIU, GREDTextIU
+
 tracer = trace.get_tracer("my.tracer.name")
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -29,15 +31,6 @@ model = AutoModelForCausalLM.from_pretrained(model_name).to(device).eval()
 # model = AutoModelForCausalLM.from_pretrained(model_name, local_files_only=True).to(device).eval()
 # tokenizer = AutoTokenizer.from_pretrained(model_name, local_files_only=True, use_fast=False)
 tokenizer = AutoTokenizer.from_pretrained(model_name, use_fast=False)
-
-class GREDTextIU(TextIU):
-    @staticmethod
-    def type():
-        return TextIU.type()
-    def __repr__(self):
-        # show the full payload without truncation
-        return f"{self.type()} - ({self.creator.name()}): {self.get_text()}"
-
 
 class GREDActionGenerator(abstract.AbstractModule):
     @staticmethod
@@ -164,7 +157,12 @@ class GREDActionGenerator(abstract.AbstractModule):
 
     def setup(self):
         if self.behaviours_to_pregenerate:
-            for behavior, num_to_generate in self.behaviours_to_pregenerate:
-                results = self.predict(behavior, num_to_generate)
-                updated_predicted_strings = self.change_words(results, behavior)
-                self.pregenerated_behaviours[behavior] = updated_predicted_strings
+            with open('pregenerated_behaviors.pickle',  'rb') as f:
+                self.pregenerated_behaviours = pickle.load(f)
+            #
+            # for behavior, num_to_generate in self.behaviours_to_pregenerate:
+            #     results = self.predict(behavior, num_to_generate)
+            #     updated_predicted_strings = self.change_words(results, behavior)
+            #     self.pregenerated_behaviours[behavior] = updated_predicted_strings
+            # with open(f'pregenerated_behaviors.pickle', 'ab+') as file_handler:
+            #     pickle.dump(self.pregenerated_behaviours, file_handler)
